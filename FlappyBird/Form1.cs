@@ -130,6 +130,7 @@ namespace FlappyBird
         {
             gameTimer.Stop();
             scoreText.Text = "Game Over ! Score : " + score;
+            scoreText.BackColor = Color.Red;
         }
     }
 }

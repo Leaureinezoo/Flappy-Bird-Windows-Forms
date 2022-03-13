@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "00cdd663-1635-476a-a7a1-3fea48cd7f7a": {
+      "ProjectGuid": "00cdd663-1635-476a-a7a1-3fea48cd7f7a",
+      "DisplayName": "FlappyBird",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -14,7 +14,7 @@ namespace FlappyBird
     {
         int pipeSpeed = 6;
         int gravity = 5;
-        double score = 0;
+        int score = 0;
         
 
         public form1()
@@ -32,66 +32,64 @@ namespace FlappyBird
 
             if (pipeBottom.Left < -100)
             {
-                pipeBottom.Left = 600;
-                pipeTop.Left = 600;
                 score += 1;
-                pipeTop.Location = new Point(321, -129);
-                pipeBottom.Location = new Point(321, 368);
+                pipeTop.Location = new Point(500, -129);
+                pipeBottom.Location = new Point(500, 368);
                 Random random = new Random();
-                int randTop = random.Next(0, 6);
-                switch (randTop)
+                int rand = random.Next(0, 9);
+                switch (rand)
                 {
                     case 0:
-                        pipeTop.Location = new Point(321, -265);
-                        pipeBottom.Location = new Point(321, 194);
+                        pipeTop.Location = new Point(500, -265);
+                        pipeBottom.Location = new Point(500, 194);
                         pipeTop.Height = 324;
                         pipeBottom.Height = 335;
                         break;
                     case 1:
-                        pipeTop.Location = new Point(321, -205);
-                        pipeBottom.Location = new Point(321, 245);
+                        pipeTop.Location = new Point(500, -205);
+                        pipeBottom.Location = new Point(500, 245);
                         pipeTop.Height = 254;
                         pipeBottom.Height = 284;
                         break;
                     case 2:
-                        pipeTop.Location = new Point(321, -205);
-                        pipeBottom.Location = new Point(321, 245);
+                        pipeTop.Location = new Point(500, -205);
+                        pipeBottom.Location = new Point(500, 245);
                         pipeTop.Height = 322;
                         pipeBottom.Height = 284;
                         break;
                     case 3:
-                        pipeTop.Location = new Point(321, -205);
-                        pipeBottom.Location = new Point(321, 304);
+                        pipeTop.Location = new Point(500, -205);
+                        pipeBottom.Location = new Point(500, 304);
                         pipeTop.Height = 322;
                         pipeBottom.Height = 225;
                         break;
                     case 4:
-                        pipeTop.Location = new Point(321, -75);
-                        pipeBottom.Location = new Point(321, 304);
+                        pipeTop.Location = new Point(500, -75);
+                        pipeBottom.Location = new Point(500, 304);
                         pipeTop.Height = 245;
                         pipeBottom.Height = 225;
                         break;
                     case 5:
-                        pipeTop.Location = new Point(321, -75);
-                        pipeBottom.Location = new Point(321, 367);
+                        pipeTop.Location = new Point(500, -75);
+                        pipeBottom.Location = new Point(500, 367);
                         pipeTop.Height = 245;
                         pipeBottom.Height = 162;
                         break;
                     case 6:
-                        pipeTop.Location = new Point(321, -10);
-                        pipeBottom.Location = new Point(321, 367);
+                        pipeTop.Location = new Point(500, -10);
+                        pipeBottom.Location = new Point(500, 367);
                         pipeTop.Height = 245;
                         pipeBottom.Height = 162;
                         break;
                     case 7:
-                        pipeTop.Location = new Point(321, -10);
-                        pipeBottom.Location = new Point(321, 454);
+                        pipeTop.Location = new Point(500, -10);
+                        pipeBottom.Location = new Point(500, 454);
                         pipeTop.Height = 245;
                         pipeBottom.Height = 75;
                         break;
                     case 8:
-                        pipeTop.Location = new Point(321, -10);
-                        pipeBottom.Location = new Point(321, 454);
+                        pipeTop.Location = new Point(500, -10);
+                        pipeBottom.Location = new Point(500, 454);
                         pipeTop.Height = 366;
                         pipeBottom.Height = 75;
                         break;
